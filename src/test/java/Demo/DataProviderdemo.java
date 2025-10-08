@@ -24,7 +24,7 @@ public class DataProviderdemo {
 	{
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
 		driver.manage().window().maximize();
 		Thread.sleep(100);
